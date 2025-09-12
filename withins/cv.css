@@ -1,0 +1,183 @@
+:root {
+  --o_tausta: darkgreen;
+  --o_fontti: lightgreen;
+  --h_tausta: lightseagreen;
+  --e_fontti: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--h_tausta);
+}
+
+body {
+  width: 100vw;
+  font-family: monospace;
+  background-color: white;
+  margin: 0 auto;
+}
+
+header {
+  display: inline-block;
+  align-content: center;
+  font-size: 2.1em;
+  width: 100vw;
+  height: 42vh;
+  background-color: var(--h_tausta);
+}
+
+#nimi {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color: var(--o_tausta);
+}
+
+main {
+  width: 60vw;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+span a {
+  text-decoration: none;
+}
+
+b > i {
+  font-size: 1.1em;
+  color: var(--o_tausta);
+}
+
+li {
+  line-height: 1.5em;
+}
+
+.cv_kuva {
+  height: 280px;
+  margin-left: 20vw;
+}
+
+.block {
+  line-height: 1em;
+  float: right;
+  width: 45vw;
+  margin-right: 14vw;
+}
+th {
+  font-size: 20px;
+}
+td {
+  width: 20rem;
+  text-align: center;
+  border: 1px solid var(--o_tausta);
+  line-height: 1.5em;
+}
+
+footer {
+  position: sticky;
+  width: 100vw;
+  padding: 1vh;
+  text-align: center;
+  margin-top: 2vh;
+  background-color: var(--h_tausta);
+}
+
+div > a {
+  line-height: 1.2em;
+  text-decoration: none;
+  padding: 1px 3px;
+  color: var(--h_tausta);
+  background-color: var(--o_tausta);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* animaatiot*/
+#kuva {
+  position: relative;
+  opacity: 0;
+  animation: kuva 5s forwards;
+}
+#nimi {
+  position: relative;
+  color: var(--o_fontti);
+  opacity: 0;
+  animation: nimi 3s forwards;
+}
+
+@keyframes kuva {
+  from {
+    right: 40vw;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes nimi {
+  from {
+    top: 50vh;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+    color: var(--e_fontti);
+  }
+}
+
+/*Respot*/
+@media only screen and (max-width: 1000px) {
+  body {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  header {
+    height: 50vh;
+    margin: 0 auto;
+  }
+
+  .cv_kuva {
+    margin-left: 10vw;
+  }
+  .cv_main {
+    width: 80vw;
+  }
+  div img {
+    max-width: 220px;
+  }
+  .block {
+    margin-top: 2vh;
+    width: 43vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    width: 100vw;
+    height: 60vh;
+  }
+  #cv_otsikko {
+    width: 100vw;
+    font-size: 1.5em;
+  }
+  .cv_kuva {
+    display: block;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .cv_main {
+    max-width: 100vw;
+    width: 98vw;
+  }
+  .block {
+    width: 100vw;
+    margin: 2vw auto;
+    text-align: center;
+  }
+}
