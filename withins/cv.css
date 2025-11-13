@@ -43,6 +43,10 @@ main {
   margin: 0 auto;
 }
 
+span a {
+  text-decoration: none;
+}
+
 b > i {
   font-size: 1.1em;
   color: var(--o_tausta);
@@ -82,7 +86,7 @@ footer {
   background-color: var(--h_tausta);
 }
 
-a {
+div a {
   line-height: 1.2em;
   text-decoration: none;
   padding: 1px 3px;
@@ -184,6 +188,7 @@ a {
     text-align: center;
   }
 }
+
 
 
 
