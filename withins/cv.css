@@ -43,7 +43,7 @@ main {
   margin: 0 auto;
 }
 
-span > a {
+.link {
   text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ footer {
   background-color: var(--h_tausta);
 }
 
-div > a {
+.mail {
   line-height: 1.2em;
   text-decoration: none;
   padding: 1px 3px;
@@ -188,6 +188,7 @@ div > a {
     text-align: center;
   }
 }
+
 
 
 
