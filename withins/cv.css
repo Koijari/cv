@@ -43,7 +43,7 @@ main {
   margin: 0 auto;
 }
 
-span a {
+span > a {
   text-decoration: none;
 }
 
@@ -188,6 +188,7 @@ div a {
     text-align: center;
   }
 }
+
 
 
 
